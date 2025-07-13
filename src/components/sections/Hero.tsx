@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
             
             <p className="mt-4 text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300">
-              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 500+ Leetcode Problems
+              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 790+ Leetcode Problems | Leetcode contest rating 1575(max) | Newbie @CodeForces
             </p>
             
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
@@ -37,15 +37,15 @@ const Hero = () => {
             </p>
             
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button 
-                href="../../../FinalResume2.pdf" 
-                icon={<FileText size={18} />}
-                size="lg"
-                external
-              >
-                View Resume
-              </Button>
-              
+            <Button 
+  href={`${import.meta.env.BASE_URL}FinalResume2.pdf`} 
+  icon={<FileText size={18} />}
+  size="lg"
+  external
+>
+  View Resume
+</Button>
+
               <Button 
                 href="#contact" 
                 variant="outline" 
@@ -76,7 +76,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-800 shadow-lg">
                 <img 
-                  src="../../../Myself.jpg" 
+                  src={`${import.meta.env.BASE_URL}Myself.jpg`} 
                   alt="Profile Photo" 
                   className="w-full h-full object-cover"
                 />

@@ -7,37 +7,37 @@ const certificationsData = [
     id: 'aws-academy',
     title: 'AWS Academy Certificate',
     description: 'Certification for completing AWS Academy program.',
-    viewLink: '/AWS_Academy_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}AWS_Academy_Certificate.pdf`,
   },
   {
     id: 'apna-college',
     title: 'Apna College Sigma 3.0 DSA Course',
     description: 'Certificate of completion for DSA course by Apna College.',
-    viewLink: '/Apna_College_DSA_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}Apna_College_DSA_Certificate.pdf`,
   },
   {
     id: 'google-cloud',
     title: 'Google Cloud Career Launchpad',
     description: 'Certification for completing Google Cloud Career Launchpad program.',
-    viewLink: '/Google_Cloud_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}Google_Cloud_Certificate.pdf`,
   },
   {
     id: 'css-bootcamp',
     title: 'CSS Bootcamp by CodeKaro',
     description: 'Certificate of completion for CSS Bootcamp by CodeKaro.',
-    viewLink: '/CSS_Bootcamp_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}CSS_Bootcamp_Certificate.pdf`,
   },
   {
     id: 'ir4-techsaksham',
     title: 'Foundation Course on IR4.0 Technologies',
     description: 'Certification for completing the Foundation course on IR4.0 Technologies under TechSaksham, a joint CSR initiative between Microsoft and SAP, implemented by Edunet Foundation.',
-    viewLink: '/IR4_TechSaksham_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}IR4_TechSaksham_Certificate.pdf`,
   },
   {
     id: 'hack-did-blockchain',
     title: 'Hack:DID Blockchain Workshop',
     description: 'Certification for attending the Hack:DID Blockchain Workshop held by Learning Out Loud Coding Club, powered by HyperSign.',
-    viewLink: '/HackDID_Blockchain_Workshop_Certificate.pdf',
+    viewLink: `${import.meta.env.BASE_URL}HackDID_Blockchain_Workshop_Certificate.pdf`,
   },
 ];
 

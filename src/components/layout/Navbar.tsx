@@ -73,7 +73,7 @@ const Navbar = () => {
             </ul>
             
             <a 
-              href="../FinalResume2.pdf" 
+              href={`${import.meta.env.BASE_URL}FinalResume2.pdf`} 
               className="flex items-center px-4 py-2 rounded-full bg-primary-600 text-white hover:bg-primary-700 transition-colors text-sm font-medium"
               target="_blank"
               rel="noopener noreferrer"
@@ -121,7 +121,7 @@ const Navbar = () => {
             
             <div className="pb-8">
               <a 
-                href="../FinalResume2.pdf" 
+                href={`${import.meta.env.BASE_URL}FinalResume2.pdf`} 
                 className="flex items-center justify-center w-full px-4 py-3 rounded-full bg-primary-600 text-white hover:bg-primary-700 transition-colors text-base font-medium"
                 target="_blank"
                 rel="noopener noreferrer"

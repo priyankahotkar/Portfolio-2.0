@@ -21,7 +21,7 @@ const skillsData: SkillCategory[] = [
     id: 'web',
     title: 'Web Development',
     icon: <Layers size={24} className="text-primary-500" />,
-    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS'],
+    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS', 'EJS'],
   },
   {
     id: 'ai',
@@ -39,7 +39,7 @@ const skillsData: SkillCategory[] = [
     id: 'tools',
     title: 'Tools & Platforms',
     icon: <Tool size={24} className="text-primary-500" />,
-    skills: ['Eclipse', 'NetBeans', 'VS Code', 'Git & GitHub', 'Postman', 'Firebase', 'Heroku'],
+    skills: ['Eclipse', 'NetBeans', 'VS Code', 'Git & GitHub', 'Postman', 'Firebase', 'Heroku', 'Hoppscotch'],
   },
   {
     id: 'os',
@@ -57,7 +57,7 @@ const skillsData: SkillCategory[] = [
     id: 'soft',
     title: 'Soft Skills',
     icon: <Users size={24} className="text-primary-500" />,
-    skills: ['Team Leadership', 'Communication', 'Problem-Solving', 'Collaboration', 'Consistency', 'Analytical Thinking'],
+    skills: ['Team Leadership', 'Communication', 'Problem-Solving', 'Collaboration', 'Consistency', 'Analytical Thinking', 'Discipline'],
   },
 ];
 

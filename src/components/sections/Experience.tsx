@@ -15,15 +15,27 @@ interface ExperienceItem {
 const experienceData: ExperienceItem[] = [
   {
     id: 1,
+    title: 'SDE Intern',
+    company: 'SuccessMagnet',
+    location: 'Remote',
+    period: 'June 2025 – July 2025',
+    description: [
+      'Worked on improving company website and user experience',
+      'Optimizing web performance and ensuring cross-device compatibility'
+    ],
+  },
+  {
+    id: 1,
     title: 'Web Development Intern',
     company: 'Jabsz Gaming Studios LLP',
     location: 'Remote',
-    period: 'April 2025 – Present',
+    period: 'April 2025 – July 2025',
     description: [
-      'Working on an e-commerce gaming platform using React, TypeScript, Bootstrap, and Firebase',
-      'Contributing to website development, internal portals, and game pages',
-      'Collaborating with team members to improve user experience and implement new features',
-      'Optimizing web performance and ensuring cross-browser compatibility'
+      'Built an e-commerce gaming platform using React, TypeScript, Tailwind, and Firebase',
+      'Contributed to website development, internal portals, and game pages',
+      'Collaborated with team members to improve user experience and implement new features',
+      'Completed the whole agile dev cycle right from prototyping, developing and various kinds of testing',
+      'Worked on a client project using Appsheet'
     ],
   },
   {
