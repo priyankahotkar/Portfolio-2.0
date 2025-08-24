@@ -20,7 +20,7 @@ const educationData: EducationItem[] = [
     degree: 'B.Tech in Computer Science and Engineering',
     duration: '2022–2026',
     details: [
-      'Current CGPA: 9.75',
+      'Current CGPA: 9.68',
       'Focused on Computer Science fundamentals, Data Structures, Algorithms, and Software Development',
       'Active participation in technical clubs and hackathons'
     ],

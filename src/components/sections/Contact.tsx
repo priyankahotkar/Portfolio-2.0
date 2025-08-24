@@ -139,6 +139,15 @@ const Contact = () => {
                   <span>leetcode.com/u/priyankahotkar_/</span>
                 </a>
                 
+                <a 
+                  href="https://codeforces.com/profile/priyankahotkar_" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                >
+                  <Code size={20} className="mr-3" />
+                  <span>codeforces.com/profile/priyankahotkar_/</span>
+                </a>
                 
               </div>
             </div>

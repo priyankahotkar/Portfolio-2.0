@@ -25,7 +25,7 @@ const experienceData: ExperienceItem[] = [
     ],
   },
   {
-    id: 1,
+    id: 2,
     title: 'Web Development Intern',
     company: 'Jabsz Gaming Studios LLP',
     location: 'Remote',
@@ -39,7 +39,7 @@ const experienceData: ExperienceItem[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'AI/ML Intern',
     company: 'UptoSkills',
     location: 'Remote',
@@ -52,7 +52,7 @@ const experienceData: ExperienceItem[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Extracurriculars',
     company: 'University Clubs & Activities',
     location: 'Walchand Institute of Technology',

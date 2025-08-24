@@ -13,8 +13,8 @@ interface Accomplishment {
 const accomplishmentsData: Accomplishment[] = [
   {
     id: 'leetcode',
-    title: '800+ DSA Problems',
-    description: 'Solved over 790 coding challenges on LeetCode, demonstrating strong problem-solving and algorithmic skills. Solving more on Gfg and Codeforces',
+    title: '1000+ DSA Problems',
+    description: 'Solved over 950 coding challenges on LeetCode, demonstrating strong problem-solving and algorithmic skills. Solving more on Gfg and Codeforces',
     icon: <Code size={24} className="text-yellow-500" />,
   },
   {
@@ -38,7 +38,7 @@ const accomplishmentsData: Accomplishment[] = [
   {
     id: 'dsa',
     title: 'DSA Contest Participant',
-    description: 'Regular participant in Leetcode, Codeforces and college-level DSA contests, consistently achieving high rankings, Leetcode rating of top 27% in contests, latest rank in Unstop contests was 20, Newbie at Codeforces.',
+    description: 'Regular participant in Leetcode, Codeforces and college-level DSA contests, consistently achieving high rankings, Leetcode rating of top 18% in contests, latest rank in Unstop contests was 20, Newbie at Codeforces.',
     icon: <Award size={24} className="text-accent-500" />,
   },
   {
