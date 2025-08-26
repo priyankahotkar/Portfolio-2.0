@@ -507,12 +507,36 @@ const projectsData: Project[] = [
             <span>Group & 1:1 Mentoring</span>
           </div>
           <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>Gamified Learning</span>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>Roadmaps for all tech stack for free</span>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>Discussion Forum</span>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>FAQ Section</span>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>Creating and interacting in Groups feature</span>
+          </div>
+          <div class="feature-item">
             <i data-lucide="award" class="icon"></i>
             <span>Progress Tracking</span>
           </div>
           <div class="feature-item">
             <i data-lucide="layout-grid" class="icon"></i>
             <span>Activity Grid</span>
+          </div>
+          <div class="feature-item">
+            <i data-lucide="message-square" class="icon"></i>
+            <span>Badges and Rewards</span>
           </div>
         </div>
       </div>
@@ -668,6 +692,123 @@ const projectsData: Project[] = [
     </div>`
   },
   {
+    id: 'dsa-with-real-life',
+    title: 'DSA with Real Life',
+    description: 'An interactive learning platform that explains Data Structures & Algorithms with real-life analogies, helping learners easily understand abstract concepts. With 90+ users, 400+ views, and a low 24% bounce rate, it proves high engagement and learner satisfaction.',
+    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    tech: ['React.js', 'Next.js', 'Vercel', 'JavaScript', 'Tailwind CSS'],
+    github: 'https://github.com/priyankahotkar/DSA-with-Real-Life',
+    demo: 'https://dsa-with-real-life.vercel.app/',
+    featured: true,
+    details: `<div class="project-modal">
+        <div class="project-header">
+          <h3 class="project-title">DSA with Real Life</h3>
+          <div class="project-tagline">Learn Algorithms through Everyday Analogies</div>
+        </div>
+  
+        <p class="project-description">An innovative educational platform that bridges the gap between theory and practicality by teaching Data Structures & Algorithms through relatable real-life examples. Designed for students and developers who want to truly "get" DSA concepts instead of just memorizing them.</p>
+  
+        <div class="project-mission">
+          <div class="mission-statement">
+            <i data-lucide="target" class="icon"></i>
+            <div>
+              <h4>Mission</h4>
+              <p>Make complex DSA concepts simple, visual, and unforgettable by tying them to everyday scenarios.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="project-section">
+          <h4><i data-lucide="star" class="icon"></i> Key Features</h4>
+          <div class="features-grid">
+            <div class="feature-item">
+              <i data-lucide="book-open" class="icon"></i>
+              <span>Concepts with Real-Life Examples</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="layout-grid" class="icon"></i>
+              <span>Over 200+ problems covering all DSA concepts</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="layout-grid" class="icon"></i>
+              <span>Company Specific Questions for free</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="layout-grid" class="icon"></i>
+              <span>No sign up required</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="layout-grid" class="icon"></i>
+              <span>Community discussion forum</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="layout-grid" class="icon"></i>
+              <span>Simple & Clean UI</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="globe" class="icon"></i>
+              <span>Accessible Anywhere (Deployed on Vercel)</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="project-section">
+          <h4><i data-lucide="bar-chart" class="icon"></i> Performance Highlights</h4>
+          <div class="features-grid">
+            <div class="feature-item">
+              <i data-lucide="users" class="icon"></i>
+              <span>90+ Active Users</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="eye" class="icon"></i>
+              <span>400+ Views</span>
+            </div>
+            <div class="feature-item">
+              <i data-lucide="smile" class="icon"></i>
+              <span>24% Bounce Rate (High Retention)</span>
+            </div>
+          </div>
+        </div>
+  
+        <div class="project-section">
+          <h4><i data-lucide="code" class="icon"></i> Tech Stack</h4>
+          <div class="tech-tags">
+            <span>React.js</span>
+            <span>Giscus</span>
+            <span>JavaScript</span>
+            <span>Tailwind CSS</span>
+            <span>Vercel</span>
+          </div>
+        </div>
+  
+        <div class="project-impact">
+          <div class="impact-item">
+            <i data-lucide="zap" class="icon"></i>
+            <div>
+              <h4>Engaging</h4>
+              <p>Turns abstract DSA into simple, story-like learning.</p>
+            </div>
+          </div>
+          <div class="impact-item">
+            <i data-lucide="users" class="icon"></i>
+            <div>
+              <h4>Adopted</h4>
+              <p>90+ learners already using it actively.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="project-footer">
+          <a href="https://dsa-with-real-life.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+            <i data-lucide="external-link"></i> Live Website
+          </a>
+          <a href="https://github.com/priyankahotkar/DSA-with-Real-Life" target="_blank" rel="noopener noreferrer" class="project-link">
+            <i data-lucide="github"></i> GitHub Repo
+          </a>
+        </div>
+      </div>`
+  },  
+  {
     id: 'chatbot',
     title: 'AI-Driven Chatbot',
     description: 'Developed a chatbot that provides accurate, fast, context-aware responses with an intuitive UI/UX using Google Search API.',
@@ -680,7 +821,7 @@ const projectsData: Project[] = [
     id: 'devconnect',
     title: 'DevConnect',
     description: 'A full-stack social media platform for developers: create profiles, share posts, follow others, and view a personalized timeline.',
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    image: 'https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     tech: [
       'React.js', 'React Router', 'Material UI', 'Axios',
       'Node.js', 'Express.js', 'JWT', 'MongoDB', 'Mongoose'

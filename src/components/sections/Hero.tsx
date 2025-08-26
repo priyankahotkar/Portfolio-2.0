@@ -82,7 +82,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 rounded-full px-4 py-2 shadow-md">
-                <span className="text-primary-600 dark:text-primary-400 font-medium">9.75 CGPA</span>
+                <span className="text-primary-600 dark:text-primary-400 font-medium">9.68 CGPA</span>
               </div>
             </div>
           </motion.div>
