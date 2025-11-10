@@ -15,13 +15,13 @@ const skillsData: SkillCategory[] = [
     id: 'languages',
     title: 'Programming Languages',
     icon: <Code size={24} className="text-primary-500" />,
-    skills: ['Java', 'Python', 'C++', 'JavaScript', 'TypeScript', 'DART'],
+    skills: ['Java', 'Python', 'C++', 'JavaScript', 'TypeScript'],
   },
   {
     id: 'web',
     title: 'Web Development',
     icon: <Layers size={24} className="text-primary-500" />,
-    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS', 'EJS'],
+    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'HTML', 'CSS', 'Javascript', 'Tailwind CSS'],
   },
   {
     id: 'ai',
@@ -33,13 +33,13 @@ const skillsData: SkillCategory[] = [
     id: 'backend',
     title: 'Backend & Database',
     icon: <Database size={24} className="text-primary-500" />,
-    skills: ['MySQL', 'JDBC', 'Spring Boot', 'Firebase', 'MongoDB', 'XAMPP', 'REST APIs'],
+    skills: ['Firebase', 'MongoDB', 'Express', 'Node', 'EJS', 'WebSockets', 'WebRTC', 'MySQL', 'Spring Boot'],
   },
   {
     id: 'tools',
     title: 'Tools & Platforms',
     icon: <Tool size={24} className="text-primary-500" />,
-    skills: ['Eclipse', 'NetBeans', 'VS Code', 'Git & GitHub', 'Postman', 'Firebase', 'Heroku', 'Hoppscotch'],
+    skills: ['Git', 'GitHub', 'REST APIs', 'Postman', 'Docker', 'CI/CD Pipelines', 'Redis'],
   },
   {
     id: 'os',

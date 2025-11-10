@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
             
             <p className="mt-4 text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300">
-              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 950+ Leetcode Problems | Leetcode contest rating 1642 | Newbie @CodeForces
+              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 1000+ Leetcode Problems | Leetcode contest rating 1712(max) | Newbie @CodeForces
             </p>
             
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-400 max-w-2xl">

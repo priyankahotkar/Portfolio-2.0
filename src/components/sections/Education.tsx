@@ -32,9 +32,12 @@ const educationData: EducationItem[] = [
     degree: '12th Board (HSC)',
     duration: '2020–2022',
     details: [
-      'Score: 88.33%',
-      'JEE Advanced Rank: 18,000',
-      'JEE Mains: 97.58%ile',
+      'HSC Percentage: 88.33%',
+      'JEE Advanced Rank(AIR): 18K',
+      'JEE Advanced Rank(Category): 637',
+      'JEE Mains: 97.17%ile',
+      'JEE Mains Rank(AIR): 25K',
+      'JEE Mains Rank(Category): 747',
       'MHT-CET: 99.66%ile'
     ],
     icon: <School size={24} className="text-primary-500" />,
@@ -43,7 +46,7 @@ const educationData: EducationItem[] = [
     id: 'mes',
     institution: 'Mahesh English School, Solapur',
     degree: 'SSC (10th Board)',
-    duration: '2018–2020',
+    duration: '2019–2020',
     details: [
       'Score: 95%',
       'Strong foundation in Mathematics and Science',

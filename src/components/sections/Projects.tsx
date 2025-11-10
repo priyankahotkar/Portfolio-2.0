@@ -580,9 +580,112 @@ const projectsData: Project[] = [
       </div>
     </div>`
   },
+{
+  id: 'design-nova',
+  title: 'Design Nova',
+  description: 'A modern, responsive system-design learning platform featuring collaborative whiteboard, live code execution, and interactive system architecture visualization for aspiring software engineers.',
+  image: 'https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+  tech: ['React (Vite)', 'TailwindCSS', 'Node.js', 'Express.js', 'MongoDB', 'Socket.IO', 'Docker'],
+  github: 'https://github.com/priyankahotkar/System-Design-Website',
+  demo: 'https://design-nova.vercel.app/',
+  featured: true,
+  details: `<div class="project-modal">
+    <div class="project-header">
+      <h3 class="project-title">Design Nova</h3>
+      <div class="project-tagline">Interactive System-Design Learning Platform</div>
+    </div>
+
+    <p class="project-description">
+      A full-stack web application that enables developers to learn and practice system design through interactive whiteboards, real-time collaboration, and code execution — built for performance, scalability, and modern UI experience.
+    </p>
+
+    <div class="project-mission">
+      <div class="mission-statement">
+        <i data-lucide="target" class="icon"></i>
+        <div>
+          <h4>Mission</h4>
+          <p>Empower developers to master system-design concepts through visual learning and real-time collaboration.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h4><i data-lucide="star" class="icon"></i> Key Features</h4>
+      <div class="features-grid">
+        <div class="feature-item">
+          <i data-lucide="users" class="icon"></i>
+          <span>Real-time Collaborative Whiteboard</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="code" class="icon"></i>
+          <span>Live Code Execution (Java, Python, C++)</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="database" class="icon"></i>
+          <span>System Architecture Visualization</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="message-square" class="icon"></i>
+          <span>Discussion Forum for Peer Learning</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="award" class="icon"></i>
+          <span>Gamified Learning with Badges</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="user-check" class="icon"></i>
+          <span>Authentication & Profile Management</span>
+        </div>
+        <div class="feature-item">
+          <i data-lucide="cpu" class="icon"></i>
+          <span>Dockerized Deployment</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h4><i data-lucide="code" class="icon"></i> Tech Stack</h4>
+      <div class="tech-tags">
+        <span>React (Vite)</span>
+        <span>TailwindCSS</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>Socket.IO</span>
+        <span>Docker</span>
+      </div>
+    </div>
+
+    <div class="project-impact">
+      <div class="impact-item">
+        <i data-lucide="bar-chart" class="icon"></i>
+        <div>
+          <h4>Performance Metrics</h4>
+          <p>Performance: 95 | Accessibility: 90 | Best Practices: 98 | SEO: 82 | Bounce Rate: 18%</p>
+        </div>
+      </div>
+      <div class="impact-item">
+        <i data-lucide="globe" class="icon"></i>
+        <div>
+          <h4>Reach</h4>
+          <p>80+ active visitors and growing community engagement</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-footer">
+      <a href="https://design-nova.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+        <i data-lucide="external-link"></i> Live Website
+      </a>
+      <a href="https://github.com/priyankahotkar/System-Design-Website" target="_blank" rel="noopener noreferrer" class="project-link">
+        <i data-lucide="github"></i> GitHub Repo
+      </a>
+    </div>
+  </div>`
+},
   {
     id: 'calendar',
-    title: 'FullCalendar.io Clone',
+    title: 'FullCalendar Next Version',
     description: 'A feature-rich calendar app inspired by FullCalendar.io, with smart scheduling, real-time chat, video calls, and push notifications.',
     image: 'https://www.lifewire.com/thmb/rEjebep0JHTFDN_53tkV-3ZSYjQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/free-online-calendars-1357935-41eafe4b4d484e6f8f7593cd5514e071.png',
     tech: ['React', 'TypeScript', 'Firebase', 'Jitsi', 'JavaScript', 'HTML/CSS'],
@@ -691,6 +794,70 @@ const projectsData: Project[] = [
       </div>
     </div>`
   },
+  {
+  id: 'video-conferencing-app',
+  title: 'Video Conferencing App',
+  description: 'A peer-to-peer video conferencing platform enabling real-time meetings, chat, and screen sharing with secure WebRTC connections and dynamic room creation.',
+  image: 'https://images.unsplash.com/photo-1612831455359-970e23a1e4e9?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmlkZW8lMjBjYWxsfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600',
+  tech: ['React.js', 'TailwindCSS', 'Node.js', 'Express.js', 'MongoDB', 'WebRTC', 'Socket.IO'],
+  github: 'https://github.com/priyankahotkar/Video-Conferencing-App',
+  demo: 'https://video-conferencing-app-one-coral.vercel.app/',
+  featured: true,
+  details: `<div class="project-modal">
+    <div class="project-header">
+      <h3 class="project-title">Video Conferencing App</h3>
+      <div class="project-tagline">Seamless Real-Time Communication Platform</div>
+    </div>
+
+    <p class="project-description">
+      A full-stack peer-to-peer video conferencing solution supporting real-time video, audio, chat, and screen sharing using WebRTC and WebSockets. Built with React and TailwindCSS for a modern, responsive UI and a robust backend powered by Node.js, Express, and MongoDB.
+    </p>
+
+    <div class="project-section">
+      <h4><i data-lucide="star" class="icon"></i> Key Features</h4>
+      <div class="features-grid">
+        <div class="feature-item"><i data-lucide="video" class="icon"></i><span>Real-Time Video & Audio Calls</span></div>
+        <div class="feature-item"><i data-lucide="monitor" class="icon"></i><span>Screen Sharing</span></div>
+        <div class="feature-item"><i data-lucide="users" class="icon"></i><span>Dynamic Room Creation & Join</span></div>
+        <div class="feature-item"><i data-lucide="message-square" class="icon"></i><span>Integrated Chat System</span></div>
+        <div class="feature-item"><i data-lucide="shield" class="icon"></i><span>Secure Peer-to-Peer Connection via WebRTC</span></div>
+        <div class="feature-item"><i data-lucide="layout" class="icon"></i><span>Responsive, Minimal UI with TailwindCSS</span></div>
+      </div>
+    </div>
+
+    <div class="project-section">
+      <h4><i data-lucide="code" class="icon"></i> Tech Stack</h4>
+      <div class="tech-tags">
+        <span>React.js</span>
+        <span>TailwindCSS</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>MongoDB</span>
+        <span>WebRTC</span>
+        <span>Socket.IO</span>
+      </div>
+    </div>
+
+    <div class="project-impact">
+      <div class="impact-item">
+        <i data-lucide="zap" class="icon"></i>
+        <div>
+          <h4>Impact</h4>
+          <p>Enabled seamless, low-latency virtual meetings for multiple users through efficient peer-to-peer WebRTC integration.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-footer">
+      <a href="https://video-conferencing-app-one-coral.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link primary">
+        <i data-lucide="external-link"></i> Live Website
+      </a>
+      <a href="https://github.com/priyankahotkar/Video-Conferencing-App" target="_blank" rel="noopener noreferrer" class="project-link">
+        <i data-lucide="github"></i> GitHub Repo
+      </a>
+    </div>
+  </div>`
+},
   {
     id: 'dsa-with-real-life',
     title: 'DSA with Real Life',
