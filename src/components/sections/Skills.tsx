@@ -27,7 +27,7 @@ const skillsData: SkillCategory[] = [
     id: 'ai',
     title: 'AI/ML',
     icon: <Cpu size={24} className="text-primary-500" />,
-    skills: ['Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning', 'Python Libraries (TensorFlow, PyTorch)', 'Computer Vision (OpenCV)'],
+    skills: ['Supervised Learning', 'Unsupervised Learning', 'Reinforcement Learning'],
   },
   {
     id: 'backend',
