@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Trophy, Code, Users, Award, Zap } from 'lucide-react';
+import { Trophy, Code, Users, Award, Zap, GitBranch, Star } from 'lucide-react';
 import SectionTitle from '../ui/SectionTitle';
 
 interface Accomplishment {
@@ -13,8 +13,8 @@ interface Accomplishment {
 const accomplishmentsData: Accomplishment[] = [
   {
     id: 'leetcode',
-    title: '1000+ DSA Problems',
-    description: 'Solved over 1000 coding challenges on LeetCode, demonstrating strong problem-solving and algorithmic skills. Solving more on Gfg and Codeforces',
+    title: '1400+ DSA Problems',
+    description: 'Solved over 1400 coding challenges on LeetCode, demonstrating strong problem-solving and algorithmic skills. Solving more on Gfg and Codeforces',
     icon: <Code size={24} className="text-yellow-500" />,
   },
   {
@@ -38,7 +38,7 @@ const accomplishmentsData: Accomplishment[] = [
   {
     id: 'dsa',
     title: 'DSA Contest Participant',
-    description: 'Regular participant in Leetcode, Codeforces and college-level DSA contests, consistently achieving high rankings, Leetcode rating of top 12% in contests, latest rank in Unstop contests was around 20, Newbie at Codeforces.',
+    description: 'Ranked in the top 9% globally with a peak rating of 1758 in Leetcode Contests, secured Rank 1706 / 30,706 in LeetCode Weekly Contest 482, and achieved a Top 20 rank in Unstop contests. Advanced to the final round, placing among the Top 10 students out of 300 participants across Solapur in COD-A-THON, organized by Savali and Eshwar Foundation.',
     icon: <Award size={24} className="text-accent-500" />,
   },
   {
@@ -46,6 +46,18 @@ const accomplishmentsData: Accomplishment[] = [
     title: 'Team Leader in College Projects',
     description: 'Led various college-level project teams and actively participated in events, showcasing leadership and collaboration skills.',
     icon: <Users size={24} className="text-blue-500" />,
+  },
+  {
+    id: 'open-source',
+    title: 'Open Source Contributions',
+    description: 'Contributed to HashSlap Summer of Code 2025, HacktoberFest 2025, and actively collaborated on personal projects including DSA Mastery and Design Nova. Dedicated to advancing open source initiatives and community-driven development.',
+    icon: <GitBranch size={24} className="text-orange-500" />,
+  },
+  {
+    id: 'github-stats',
+    title: 'GitHub Stats: B Grade',
+    description: 'Achieved B Grade on GitHub Stats, reflecting consistent contributions, repository quality, and active participation in the developer community.',
+    icon: <Star size={24} className="text-indigo-500" />,
   },
 ];
 

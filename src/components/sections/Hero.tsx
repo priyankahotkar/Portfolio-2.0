@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
             
             <p className="mt-4 text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300">
-              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 1000+ Leetcode Problems | Leetcode contest rating 1712(max) | Newbie @CodeForces
+              Driven CSE undergrad | Full Stack Developer | AI/ML Enthusiast | 1400+ Leetcode Problems | Leetcode contest rating 1758(max) | Newbie @CodeForces
             </p>
             
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
@@ -82,7 +82,7 @@ const Hero = () => {
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 rounded-full px-4 py-2 shadow-md">
-                <span className="text-primary-600 dark:text-primary-400 font-medium">9.68 CGPA</span>
+                <span className="text-primary-600 dark:text-primary-400 font-medium">9.65 CGPA</span>
               </div>
             </div>
           </motion.div>

@@ -1,4 +1,4 @@
-import { useState, useEffect, createElement, useRef } from 'react';
+import { useState, useEffect, createElement, useRef, useContext } from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
@@ -6,6 +6,7 @@ import { Github, ExternalLink, PlayCircle, Target, Cpu, Settings, Wifi, RefreshC
 import SectionTitle from '../ui/SectionTitle';
 import Button from '../ui/Button';
 import TechBadge from '../ui/TechBadge';
+import { useTheme } from '../../contexts/ThemeContext';
 
 // Map of icon names to their components
 const iconComponents = {
@@ -37,11 +38,11 @@ const iconComponents = {
   'external-link': ExternalLink
 } as const;
 
-// Project modal styles
-const projectModalStyles = `
+// Project modal styles - dynamically generated based on theme
+const getProjectModalStyles = (isDark: boolean) => `
   .project-modal {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    color: #1f2937;
+    color: ${isDark ? '#e2e8f0' : '#1f2937'};
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
@@ -51,26 +52,26 @@ const projectModalStyles = `
   .project-header {
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid ${isDark ? '#475569' : '#e5e7eb'};
   }
 
   .project-title {
     font-size: 1.75rem;
     font-weight: 700;
-    color:rgb(236, 240, 248);
+    color: ${isDark ? '#ffffff' : '#1f2937'};
     margin: 0 0 0.5rem 0;
   }
 
   .project-tagline, .project-subtitle {
     font-size: 1.1rem;
-    color: rgb(230, 236, 245);
+    color: ${isDark ? '#cbd5e1' : '#6b7280'};
     margin: 0;
     font-weight: 500;
   }
 
   .project-description {
     font-size: 1.05rem;
-    color:rgb(230, 236, 245);
+    color: ${isDark ? '#e2e8f0' : '#374151'};
     margin-bottom: 1.5rem;
     line-height: 1.7;
   }
@@ -81,7 +82,7 @@ const projectModalStyles = `
 
   .project-section h4 {
     font-size: 1.2rem;
-    color:rgb(230, 236, 245);
+    color: ${isDark ? '#f1f5f9' : '#1f2937'};
     margin: 0 0 1rem 0;
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@ const projectModalStyles = `
   }
 
   .project-section p {
-    color:rgb(230, 236, 245);
+    color: ${isDark ? '#e2e8f0' : '#374151'};
   }
 
   .tech-tags {
@@ -106,8 +107,8 @@ const projectModalStyles = `
   }
 
   .tech-tags span {
-    background-color: #e0f2fe;
-    color: #0369a1;
+    background-color: ${isDark ? '#1e3a8a' : '#e0f2fe'};
+    color: ${isDark ? '#93c5fd' : '#0369a1'};
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
     font-size: 0.85rem;
@@ -122,8 +123,8 @@ const projectModalStyles = `
   }
 
   .feature-item {
-    background: #f9fafb;
-    border: 1px solid #e5e7eb;
+    background: ${isDark ? '#1e293b' : '#f9fafb'};
+    border: 1px solid ${isDark ? '#334155' : '#e5e7eb'};
     border-radius: 0.5rem;
     padding: 1rem;
     display: flex;
@@ -146,13 +147,13 @@ const projectModalStyles = `
   .feature-item h5 {
     margin: 0 0 0.25rem 0;
     font-size: 1rem;
-    color: #111827;
+    color: ${isDark ? '#f1f5f9' : '#111827'};
   }
 
   .feature-item p {
     margin: 0;
     font-size: 0.9rem;
-    color:rgb(13, 35, 65);
+    color: ${isDark ? '#cbd5e1' : '#374151'};
   }
 
   .code-block {
@@ -180,7 +181,7 @@ const projectModalStyles = `
     gap: 1rem;
     margin-top: 2rem;
     padding-top: 1.5rem;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid ${isDark ? '#475569' : '#e5e7eb'};
   }
 
   .project-link {
@@ -192,9 +193,9 @@ const projectModalStyles = `
     font-weight: 500;
     text-decoration: none;
     transition: all 0.2s ease;
-    background-color: #f3f4f6;
-    color: #374151;
-    border: 1px solid #e5e7eb;
+    background-color: ${isDark ? '#334155' : '#f3f4f6'};
+    color: ${isDark ? '#e2e8f0' : '#374151'};
+    border: 1px solid ${isDark ? '#475569' : '#e5e7eb'};
   }
 
   .project-link.primary {
@@ -219,7 +220,7 @@ const projectModalStyles = `
   }
 
   .project-impact {
-    background-color: #f0f9ff;
+    background-color: ${isDark ? '#1e3a8a' : '#f0f9ff'};
     border-left: 3px solid #0ea5e9;
     padding: 1rem;
     border-radius: 0 0.375rem 0.375rem 0;
@@ -237,15 +238,15 @@ const projectModalStyles = `
 
   .project-impact span {
     font-size: 0.95rem;
-    color: #075985;
+    color: ${isDark ? '#93c5fd' : '#075985'};
   }
 
   .project-roadmap {
     margin-top: 2rem;
     padding: 1.25rem;
-    background-color: #f8fafc;
+    background-color: ${isDark ? '#1e293b' : '#f8fafc'};
     border-radius: 0.5rem;
-    border: 1px solid #e2e8f0;
+    border: 1px solid ${isDark ? '#334155' : '#e2e8f0'};
   }
 
   .roadmap-list {
@@ -255,7 +256,7 @@ const projectModalStyles = `
 
   .roadmap-list li {
     margin-bottom: 0.5rem;
-    color:rgb(6, 34, 72);
+    color: ${isDark ? '#cbd5e1' : '#1f2937'};
     position: relative;
     padding-left: 1.25rem;
   }
@@ -279,7 +280,7 @@ const projectModalStyles = `
     margin-bottom: 0.75rem;
     padding-left: 1.75rem;
     position: relative;
-    color:rgb(228, 234, 243);
+    color: ${isDark ? '#e2e8f0' : '#374151'};
   }
 
   .how-it-works li:before {
@@ -303,12 +304,12 @@ const projectModalStyles = `
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: #f8fafc;
+    background: ${isDark ? '#1e293b' : '#f8fafc'};
     padding: 0.5rem 1rem;
     border-radius: 0.375rem;
     font-size: 0.95rem;
-    color: #334155;
-    border: 1px solid #e2e8f0;
+    color: ${isDark ? '#cbd5e1' : '#334155'};
+    border: 1px solid ${isDark ? '#334155' : '#e2e8f0'};
   }
 
   .highlight-item .icon {
@@ -328,7 +329,7 @@ const projectModalStyles = `
     display: flex;
     align-items: flex-start;
     gap: 1rem;
-    background: #f0f9ff;
+    background: ${isDark ? '#1e3a8a' : '#f0f9ff'};
     padding: 1.25rem;
     border-radius: 0.5rem;
     margin: 1.5rem 0;
@@ -342,12 +343,12 @@ const projectModalStyles = `
 
   .mission-statement h4 {
     margin: 0 0 0.5rem 0;
-    color: #075985;
+    color: ${isDark ? '#93c5fd' : '#075985'};
   }
 
   .mission-statement p {
     margin: 0;
-    color: #0c4a6e;
+    color: ${isDark ? '#bfdbfe' : '#0c4a6e'};
   }
 
   .impact-item {
@@ -364,17 +365,17 @@ const projectModalStyles = `
 
   .impact-item h4 {
     margin: 0 0 0.25rem 0;
-    color: #065f46;
+    color: ${isDark ? '#86efac' : '#065f46'};
   }
 
   .impact-item p {
     margin: 0;
-    color: #047857;
+    color: ${isDark ? '#86efac' : '#047857'};
     font-size: 0.95rem;
   }
   
   .feature-list {
-  color:rgb(228, 234, 243);
+    color: ${isDark ? '#cbd5e1' : '#374151'};
   }
 `;
 
@@ -1191,6 +1192,7 @@ const projectsData: Project[] = [
 ];
 
 const Projects = () => {
+  const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const styleRef = useRef<HTMLStyleElement | null>(null);
   const iconElementsRef = useRef<Element[]>([]);
@@ -1198,9 +1200,9 @@ const Projects = () => {
   useEffect(() => {
     setMounted(true);
     
-    // Add styles to document head
+    // Add styles to document head based on theme
     const styleElement = document.createElement('style');
-    styleElement.textContent = projectModalStyles;
+    styleElement.textContent = getProjectModalStyles(theme === 'dark');
     document.head.appendChild(styleElement);
     styleRef.current = styleElement;
     
@@ -1238,7 +1240,7 @@ const Projects = () => {
         document.head.removeChild(styleRef.current);
       }
     };
-  }, []);
+  }, [theme]);
   const [selectedFilter, setSelectedFilter] = useState<'all' | 'featured'>('featured');
   const { ref, inView } = useInView({
     threshold: 0.1,
